@@ -1,0 +1,34 @@
+{
+    "$id": "https://github.com/PMeV-EFUL/ucri2/raw/refs/heads/main/apps/building_blocks/0.1/personVictim.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$ref": "https://github.com/PMeV-EFUL/ucri2/raw/refs/heads/main/apps/building_blocks/0.1/personBase.schema.json",
+    "properties": {
+        "dateOfBirth": {
+            "type": "string",
+            "format": "date",
+            "description": "The date of birth of the victim."
+        },
+        "nationality": {
+            "type": "string",
+            "description": "The nationality of the victim."
+        }
+    },
+    "examples": [{
+        "name": "Musterfrau",
+        "surname": "Anna",
+        "phone": "+49 30 654321",
+        "email": "anna.musterfrau@example.com",
+        "address": {
+            "street": "Beispielstrasse",
+            "houseNumber": "10a",
+            "postalCode": "54321",
+            "city": "Beispielstadt",
+            "cityDistrict": "Beispielberg",
+            "state": "Berlin",
+            "country": "DE"
+        },
+        "additionalInfo": "weitere Informationen",
+        "dateOfBirth": "1990-07-20",
+        "nationality": "DE"
+    }]
+}
